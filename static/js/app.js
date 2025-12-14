@@ -1,3 +1,5 @@
-document.addEventListener('DOMContentLoaded',()=>{
-    console.log("Ready to smash!")
+
+document.addEventListener("alpine:init",()=>{
+    console.log("Alpine there!")
+   
 })

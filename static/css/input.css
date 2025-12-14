@@ -22,6 +22,9 @@
     --color-accent:var(--color-gray-700);
 
 }
+.iconify{
+    @apply text-lg
+}
 *{
     @apply break-after-all transition-all duration-150 ease-in-out focus:outline-0;
 }
@@ -45,9 +48,13 @@ h3{
 img{
     @apply block w-full h-auto object-cover object-center; 
 }
-a{
+a:not('.button'){
     @apply inline-flex items-center justify-center gap-2
      text-primary hover:text-primary focus-visible:underline;
+}
+button,.button{
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-primary cursor-pointer
+    text-center gap-2 focus-visible:ring-4 focus-visible:ring-primary/50;
 }
 section{
     @apply my-6 ;
