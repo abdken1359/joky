@@ -4,10 +4,10 @@
 @layer theme {
   :root, :host {
     --font-sans: "Inter","Verdana";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
+    --font-mono: "Jetbrains Mono",monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -15,9 +15,12 @@
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-zinc-900: oklch(21% 0.006 285.885);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -44,6 +47,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-code: var(--color-yellow-400);
     --color-content: var(--color-gray-700);
     --color-primary: var(--color-green-500);
     --color-default: var(--color-white);
@@ -243,6 +247,24 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .my-code-block {
+    position: relative;
+    margin-block: calc(var(--spacing) * 2);
+    display: block;
+    border-radius: var(--radius-primary);
+    background-color: var(--color-zinc-900);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .my-second-code-block {
+    position: relative;
+    margin-block: calc(var(--spacing) * 2);
+    display: block;
+    border-radius: var(--radius-primary);
+    background-color: var(--color-gray-100);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+  }
   .absolute {
     position: absolute;
   }
@@ -336,11 +358,37 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .my-code {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    color: var(--color-code) !important;
+    & *::selection {
+      background-color: var(--color-code) !important;
+    }
+    &::selection {
+      background-color: var(--color-code) !important;
+    }
+    & *::selection {
+      color: var(--color-white);
+    }
+    &::selection {
+      color: var(--color-white);
+    }
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .px-2\! {
     padding-inline: calc(var(--spacing) * 2) !important;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .underline {
     text-decoration-line: underline;
@@ -433,7 +481,7 @@ img {
   object-fit: cover;
   object-position: center;
 }
-a:not('.button') {
+a:not(.button) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -475,6 +523,9 @@ section {
 hr {
   border-radius: var(--radius-primary);
   border-color: var(--color-accent);
+}
+code {
+  font-family: var(--font-mono);
 }
 @property --tw-border-style {
   syntax: "*";
@@ -537,6 +588,10 @@ hr {
   syntax: "*";
   inherits: false;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -551,10 +606,6 @@ hr {
   inherits: false;
 }
 @property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
@@ -641,11 +692,11 @@ hr {
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-leading: initial;
-      --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

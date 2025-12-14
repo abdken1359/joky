@@ -9,9 +9,68 @@
     Magna ullamco eiusmod tempor culpa id veniam eu velit qui <a href="/api/jokes">Go to jokes</a>.
     </p>
     </section>
-    <hr/>
-    <section id="all_jokes">
+    <hr id="all_jokes"/>
+    <section >
         <h2>All Jokes</h2> 
+        <p>To get all jokes, call the following endpoint without any query parameters.</p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes</code>
+        </div>
+        <p>The response body will look like this:</p>
+        <div class="my-second-code-block">
+            <pre>
+{
+    jokes:[
+        {   
+            category:string,
+            headline:string,
+            text:string,
+        }
+    ]
+}
+            </pre>
+        </div>
+    </section>
+    <hr id="all_categories"/>
+    <section>
+        <h2>Joke id</h2>
+        <p class="font-semibold">Endpoint: </p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes/{id:int}</code>
+        </div>
+        <p class="font-bold">Response body:</p>
+        <div class="my-second-code-block">
+            <pre>
+{
+   joke:{
+    category:string,
+    headline:string,
+    text:string,
+   }
+}
+</pre>
+   
+        </div>
+         If the <i>id</i> don't point to a joke, a 404 response code will be issued. 
+         Also, if the <i>id</i> isn't a positive integer, a 404 response code will be issued.
+
+    </section>
+    <hr id="all_categories"/>
+    <section>
+        <h2>Joke Categories</h2>
+        <p class="font-semibold">Endpoint: </p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes/categories</code>
+        </div>
+        <p class="font-bold">Response body:</p>
+        <div class="my-second-code-block">
+            <pre>
+{
+   categories:string[]
+}
+</pre>
+        </div>
+
     </section>
     <p style="margin-top: 1000px;">sdkljroueqie</p>
 </div>

@@ -80,7 +80,7 @@ async def search():
         searched_jokes_by_text=[j for j in jokes if by_text.lower() in j["text"].lower()]
         return jsonify({
             "status":"success",
-            "search_term":by_headline,
+            "search_term":by_text,
             "jokes":searched_jokes_by_text
         })
     return jsonify({

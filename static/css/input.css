@@ -2,6 +2,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme{
     --font-sans:"Inter","Verdana";
+    --font-mono:"Jetbrains Mono",monospace;
+    --color-code:var(--color-yellow-400);
     --color-content:var(--color-gray-700);
     --color-primary:var(--color-green-500);
     --color-default:var(--color-white);
@@ -48,7 +50,7 @@ h3{
 img{
     @apply block w-full h-auto object-cover object-center; 
 }
-a:not('.button'){
+a:not(.button){
     @apply inline-flex items-center justify-center gap-2
      text-primary hover:text-primary focus-visible:underline;
 }
@@ -61,6 +63,18 @@ section{
 }
 hr{
     @apply border-accent rounded-primary
+}
+code{
+    @apply font-mono
+}
+@utility my-code-block{
+    @apply rounded-primary block my-2 py-2 px-4 bg-zinc-900  relative;
+}
+@utility my-code{
+    @apply text-code! selection:bg-code! selection:text-white font-mono text-sm
+}
+@utility my-second-code-block{
+    @apply rounded-primary block my-2 py-2 px-4 bg-gray-100  relative;
 }
 @utility my-container{
     @apply container mx-auto p-4;
