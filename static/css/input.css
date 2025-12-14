@@ -74,7 +74,7 @@ code{
     @apply text-code! selection:bg-code! selection:text-white font-mono text-sm
 }
 @utility my-second-code-block{
-    @apply rounded-primary block my-2 py-2 px-4 bg-gray-100  relative;
+    @apply rounded-primary block my-2 py-2 px-4 bg-accent  relative;
 }
 @utility my-container{
     @apply container mx-auto p-4;
