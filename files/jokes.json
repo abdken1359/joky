@@ -1,0 +1,164 @@
+[
+  {
+    "category": "pun",
+    "headline": "Why are pediatricians always so grumpy?",
+    "text": "They have little patients."
+  },
+  {
+    "category": "pun",
+    "headline": "Why did the scarecrow win an award?",
+    "text": "Because he was outstanding in his field."
+  },
+  {
+    "category": "pun",
+    "headline": "Why did the math book look sad?",
+    "text": "Because it had too many problems."
+  },
+  {
+    "category": "one-liner",
+    "headline": "I told my wife she was drawing her eyebrows too high.",
+    "text": "She looked surprised."
+  },
+  {
+    "category": "one-liner",
+    "headline": "I have a fear of speed bumps.",
+    "text": "But I am slowly getting over it."
+  },
+  {
+    "category": "one-liner",
+    "headline": "I used to play piano by ear.",
+    "text": "Now I use my hands."
+  },
+  {
+    "category": "dad joke",
+    "headline": "Why don't eggs tell jokes?",
+    "text": "They'd crack each other up."
+  },
+  {
+    "category": "dad joke",
+    "headline": "Why can't you give Elsa a balloon?",
+    "text": "Because she will let it go."
+  },
+  {
+    "category": "dad joke",
+    "headline": "Why did the coffee file a police report?",
+    "text": "It got mugged."
+  },
+  {
+    "category": "knock-knock",
+    "headline": "Knock, knock.",
+    "text": "Who's there? Lettuce. Lettuce who? Lettuce in, it's cold out here!"
+  },
+  {
+    "category": "knock-knock",
+    "headline": "Knock, knock.",
+    "text": "Who's there? Boo. Boo who? Don't cry, it's just a joke!"
+  },
+  {
+    "category": "knock-knock",
+    "headline": "Knock, knock.",
+    "text": "Who's there? Cow says. Cow says who? Cow says moooo!"
+  },
+  {
+    "category": "animal",
+    "headline": "Why do cows have hooves instead of feet?",
+    "text": "Because they lactose."
+  },
+  {
+    "category": "animal",
+    "headline": "Why don't seagulls fly over the bay?",
+    "text": "Because then they'd be bagels."
+  },
+  {
+    "category": "animal",
+    "headline": "What do you call a fish wearing a bowtie?",
+    "text": "Sofishticated."
+  },
+  {
+    "category": "tech",
+    "headline": "Why do programmers prefer dark mode?",
+    "text": "Because light attracts bugs."
+  },
+  {
+    "category": "tech",
+    "headline": "Why do Java developers wear glasses?",
+    "text": "Because they don't see sharp."
+  },
+  {
+    "category": "tech",
+    "headline": "How many programmers does it take to change a light bulb?",
+    "text": "None. That's a hardware problem."
+  },
+  {
+    "category": "food",
+    "headline": "Why did the tomato turn red?",
+    "text": "Because it saw the salad dressing."
+  },
+  {
+    "category": "food",
+    "headline": "Why did the cookie go to the hospital?",
+    "text": "Because it felt crummy."
+  },
+  
+  {"category": "pun", "headline": "I used to be a banker", "text": "But I lost interest."},
+  {"category": "pun", "headline": "Why did the bicycle fall over?", "text": "Because it was two-tired."},
+  {"category": "pun", "headline": "I’m reading a book about anti-gravity", "text": "It’s impossible to put down!"},
+  {"category": "pun", "headline": "I told my computer I needed a break", "text": "It said 'no problem, I’ll go to sleep.'"},
+  {"category": "pun", "headline": "I tried to catch fog", "text": "Mist."},
+
+  {"category": "dad joke", "headline": "Why did the stadium get hot after the game?", "text": "All the fans left."},
+  {"category": "dad joke", "headline": "I asked the librarian if books about paranoia exist", "text": "She whispered, 'They're right behind you.'"},
+  {"category": "dad joke", "headline": "Why did the golfer bring two pairs of pants?", "text": "In case he got a hole in one."},
+  {"category": "dad joke", "headline": "Why did the scarecrow become a successful neurosurgeon?", "text": "He was outstanding in his field, obviously."},
+  {"category": "dad joke", "headline": "Why don’t skeletons fight each other?", "text": "They don’t have the guts."},
+
+  {"category": "one-liner", "headline": "Parallel lines have so much in common", "text": "It’s a shame they’ll never meet."},
+  {"category": "one-liner", "headline": "I have a few jokes about unemployed people", "text": "But none of them work."},
+  {"category": "one-liner", "headline": "I told my wife she was drawing her eyebrows too high", "text": "She looked surprised."},
+  {"category": "one-liner", "headline": "Why don’t scientists trust atoms?", "text": "Because they make up everything."},
+  {"category": "one-liner", "headline": "I’m reading a book about teleportation", "text": "It’s bound to get me somewhere."},
+
+  {"category": "knock-knock", "headline": "Knock, knock.", "text": "Who's there? Annie. Annie who? Annie thing you can do, I can do too!"},
+  {"category": "knock-knock", "headline": "Knock, knock.", "text": "Who's there? Tank. Tank who? You're welcome!"},
+  {"category": "knock-knock", "headline": "Knock, knock.", "text": "Who's there? Cow says. Cow says who? Cow says moooo!"},
+  {"category": "knock-knock", "headline": "Knock, knock.", "text": "Who's there? Orange. Orange who? Orange you going to open the door?"},
+  {"category": "knock-knock", "headline": "Knock, knock.", "text": "Who's there? Boo. Boo who? Don’t cry, it’s just a joke!"},
+
+  {"category": "animal", "headline": "Why don’t ants get sick?", "text": "Because they have tiny ant-bodies."},
+  {"category": "animal", "headline": "Why did the chicken go to the séance?", "text": "To talk to the other side."},
+  {"category": "animal", "headline": "What do you call a sleeping bull?", "text": "A bulldozer."},
+  {"category": "animal", "headline": "Why did the octopus beat the shark at chess?", "text": "He was well-armed."},
+  {"category": "animal", "headline": "What do you call a fish with no eyes?", "text": "Fsh."},
+
+  {"category": "tech", "headline": "Why did the programmer quit his job?", "text": "Because he didn’t get arrays."},
+  {"category": "tech", "headline": "Why do programmers hate nature?", "text": "It has too many bugs."},
+  {"category": "tech", "headline": "How do programmers enjoy nature?", "text": "They log out."},
+  {"category": "tech", "headline": "Why did the computer go to the doctor?", "text": "It caught a virus."},
+  {"category": "tech", "headline": "Why did the developer go broke?", "text": "Because he used up all his cache."},
+
+  {"category": "food", "headline": "Why did the banana go to the doctor?", "text": "It wasn’t peeling well."},
+  {"category": "food", "headline": "Why don’t we tell secrets on a farm?", "text": "Because the potatoes have eyes and the corn has ears."},
+  {"category": "food", "headline": "Why did the bread go to therapy?", "text": "It kneaded it."},
+  {"category": "food", "headline": "Why did the grape stop in the middle of the road?", "text": "It ran out of juice."},
+  {"category": "food", "headline": "Why was the tomato embarrassed?", "text": "Because it saw the salad dressing."},
+
+  {"category": "math", "headline": "Why was the equal sign so humble?", "text": "Because he knew he wasn’t less than or greater than anyone else."},
+  {"category": "math", "headline": "Why was the math book sad?", "text": "Because it had too many problems."},
+  {"category": "math", "headline": "Why was the obtuse angle always so frustrated?", "text": "Because it was never right."},
+  {"category": "math", "headline": "Why did seven eat nine?", "text": "Because you’re supposed to eat three squared meals a day."},
+  {"category": "math", "headline": "Why is six afraid of seven?", "text": "Because seven eight nine."},
+
+  {"category": "science", "headline": "Why can’t you trust atoms?", "text": "Because they make up everything."},
+  {"category": "science", "headline": "Why did the photon refuse to check a bag at the airport?", "text": "Because it was traveling light."},
+  {"category": "science", "headline": "Why did the physics teacher break up with the biology teacher?", "text": "There was no chemistry."},
+  {"category": "science", "headline": "Why are chemists excellent at solving problems?", "text": "They have all the solutions."},
+  {"category": "science", "headline": "Why did the mushroom go to the party alone?", "text": "Because he was a fungi."},
+
+  {"category": "holiday", "headline": "Why did the skeleton go to the Halloween party alone?", "text": "He had no body to go with."},
+  {"category": "holiday", "headline": "What do elves learn in school?", "text": "The elf-abet."},
+  {"category": "holiday", "headline": "Why did the turkey join a band?", "text": "Because it had the drumsticks."},
+  {"category": "holiday", "headline": "Why did the Christmas tree go to the barber?", "text": "It needed a trim."},
+  {"category": "holiday", "headline": "Why did the ghost go into the bar?", "text": "For the boos."}
+
+
+]
