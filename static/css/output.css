@@ -198,6 +198,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .my-sidebar {
     position: sticky;
     top: calc(var(--spacing) * 14);
@@ -237,6 +240,12 @@
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 6);
     }
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
   }
   .static {
     position: static;
@@ -293,6 +302,9 @@
   }
   .block {
     display: block;
+  }
+  .contents {
+    display: contents;
   }
   .h-7\! {
     height: calc(var(--spacing) * 7) !important;
