@@ -1,6 +1,7 @@
 import json
-import pathlib as path
-jokes_path=path.Path('files/jokes.json')
+from pathlib import Path
+import pandas
+jokes_path=Path('files/jokes.json')
 def loadJokes()->list:
     jokes=[]
     try:
