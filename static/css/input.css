@@ -27,6 +27,9 @@
 .iconify{
     @apply text-lg
 }
+html{
+    @apply scroll-smooth;
+}
 *{
     @apply break-after-all transition-all duration-150 ease-in-out focus:outline-0;
 }
@@ -91,8 +94,8 @@ code{
     @apply flex flex-col-reverse lg:flex-row gap-0 
 }
 @utility my-sidebar{
-    @apply lg:w-1/4 hidden lg:block border-r border-accent h-[94vh] sticky top-14 z-1 pt-10;
+    @apply lg:w-1/5 hidden lg:block border-r border-accent h-[94vh] sticky top-14 z-1 pt-10;
 }
 @utility my-content{
-    @apply w-full  lg:w-3/4 block lg:px-8
+    @apply w-full  lg:w-4/5 block lg:px-8
 }

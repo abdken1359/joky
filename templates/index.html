@@ -9,14 +9,15 @@
     Magna ullamco eiusmod tempor culpa id veniam eu velit qui <a href="/api/jokes">Go to jokes</a>.
     </p>
     </section>
-    <hr id="all_jokes"/>
+    <hr id="jokes"/>
     <section >
-        <h2>All Jokes</h2> 
-        <p>To get all jokes, call the following endpoint without any query parameters.</p>
+          <h2 class="mb-2!">All Jokes</h2>
+        <p class="mb-2">Get all jokes</p>
+        <p class="font-bold">Endpoint: </p>
         <div class="my-code-block">
             <code class="my-code">/api/jokes</code>
         </div>
-        <p>The response body will look like this:</p>
+       <p class="font-bold">Response body: </p>
         <div class="my-second-code-block">
             <pre>
 {
@@ -30,9 +31,10 @@
 }</pre>
         </div>
     </section>
-    <hr id="all_categories"/>
+    <hr id="jokes_id"/>
     <section>
-        <h2>Joke id</h2>
+       <h2 class="mb-2!">Joke id</h2>
+        <p class="mb-2">Get a joke from a specified id</p>
         <p class="font-semibold">Endpoint: </p>
         <div class="my-code-block">
             <code class="my-code">/api/jokes/{id:int}</code>
@@ -54,9 +56,87 @@
          Also, if the <i>id</i> isn't a positive integer, a 404 response code will be issued.
 
     </section>
-    <hr id="all_categories"/>
+    <hr id="jokes_limit"/>
     <section>
-        <h2>Joke Categories</h2>
+        <h2 class="mb-2!">Joke Limit</h2>
+        <p class="mb-2">Get jokes with a specified limit</p>
+        <p class="font-semibold">Endpoint: </p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes/?limit="1"</code>
+        </div>
+        <p class="font-bold">Response body:</p>
+        <div class="my-second-code-block">
+            <pre>
+{  
+   limit:query.limit
+   jokes:[
+    {
+    category:string,
+    headline:string,
+    text:string,
+   }
+   ]
+}
+</pre>
+   
+        </div>
+         
+
+    </section>
+    <hr id="jokes_category"/>
+    <section>
+        <h2 class="mb-2!">Jokes Category</h2>
+        <p class="mb-2">Get jokes from a specified category</p>
+        <p class="font-semibold">Endpoint: </p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes/?category="..."</code>
+        </div>
+        <p class="font-bold">Response body:</p>
+        <div class="my-second-code-block">
+            <pre>
+{  
+   category:query.category
+   jokes:[
+    {
+    category:string,
+    headline:string,
+    text:string,
+   }
+   ]
+}
+</pre>
+   
+        </div>
+         <p>See <a href="/api/jokes/categories">Available jokes categories</a>.</p>
+
+    </section>
+    <hr id="joke_random"/>
+    <section>
+        <h2 class="mb-2!">Random Joke</h2>
+        <p class="mb-2">Get jokes from a specified category</p>
+        <p class="font-semibold">Endpoint: </p>
+        <div class="my-code-block">
+            <code class="my-code">/api/jokes/random</code>
+        </div>
+        <p class="font-bold">Response body:</p>
+        <div class="my-second-code-block">
+            <pre>
+{  
+  joke:{
+    category:string,
+    headline:string,
+    text:string,
+   }
+}
+</pre>
+   
+        </div>
+         
+
+    </section>
+    <hr id="jokes_categories"/>
+    <section>
+        <h2>Jokes Categories</h2>
         <p class="font-semibold">Endpoint: </p>
         <div class="my-code-block">
             <code class="my-code">/api/jokes/categories</code>
